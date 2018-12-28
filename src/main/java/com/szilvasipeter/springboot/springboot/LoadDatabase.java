@@ -12,12 +12,12 @@ public class LoadDatabase {
     @Bean
     CommandLineRunner init(ChapterRepository repository){
         return args -> {
-            Disposable subscribe = Flux.just(
+            /*Disposable subscribe = Flux.just(
                     new Chapter("Quick Start with Java"),
                     new Chapter("Reactive Web with Spring Boot"),
                     new Chapter("... and more"))
                     .flatMap(repository::save)
-                    .subscribe(System.out::println);
+                    .subscribe(System.out::println);*/
         };
     }
 }
